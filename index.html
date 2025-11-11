@@ -210,10 +210,11 @@
         </div>
       <div class="content has-text-justified">
         <p>
-          <b> \(\text{S}^3-\text{Bench}\) </b>
-          Figure (a) presents an overview of our\(\text{S}^3-\text{Bench}\), highlighting four major components discussed in the paper and presenting the key modalities and their corresponding applications in this field. 
-          Figure (b) shows comparison of coverage of recent survey papers on LLMs/MLLMs across different domains.
-          Figure (c) compares the coverage of recent representative survey papers on LLMs/MLLMs across different domains in science, showing that our survey is the most comprehensive one so far
+          <ul>
+          <li><b>Figure (a)</b> presents an overview of our \(\text{S}^3-\text{Bench}\), highlighting four major components discussed in the paper and presenting the key modalities and their corresponding applications in this field. </li>
+          <li><b>Figure (b)</b> shows comparison of coverage of recent survey papers on LLMs/MLLMs across different domains.</li>
+          <li><b>Figure (c)</b> compares the coverage of recent representative survey papers on LLMs/MLLMs across different domains in science, showing that our survey is the most comprehensive one so far</li>
+        </ul>
         </p>
       </div>
     </div>
@@ -225,7 +226,7 @@
 
   <div class="columns is-centered has-text-centered">
     <div class="column is-four-fifths">
-      <h2 class="title is-3" style="background: linear-gradient(to right,  indigo, indigo, skyblue,indigo, indigo); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Brief Models Summary of covering domains</h2>
+      <h2 class="title is-3" style="background: linear-gradient(to right,  indigo, indigo, skyblue,indigo, indigo); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Summary of Models across Covered Domains</h2>
       
       <div id="viewer1" style="position: relative; display: inline-block;">
         <span id="prev1" class="arrow" style="left:-60px;">&#10094;</span> <!-- 左箭头 -->
@@ -257,30 +258,20 @@
         showImage1(0);
       </script>
 
-      <div class="conetent has-text-justified" style="text-align: left;">
-          <p>
-            <b>MLLMs for Molecule Science and Drug Design </b>
-            We categorize the applications of MLLMs in Molecule Science and Drug Design into three subfields and summarize representative models along three dimensions — publication time, model size, and architectural design.
-            The resulting figure clearly illustrates the developmental trends of models across tasks, providing readers with an intuitive overview of research progress.
-            For detailed applications, please refer to the main text.
-          </p>
-            <p>
-              <b>MLLMs for Protein Science. </b> We categorize the applications of MLLMs in Protein Science into three subfields and summarize representative models along three dimensions — publication time, model size, and architectural design.
-              
-            </p>
-
-              <p>
-                <b>MLLMs for Genomics and Material Science. </b>
-                Given the relatively small number of MLLMs in the Genomics and Materials Science domains, we present them together in a single table and provide a comparative summary across three dimensions — model architecture, model size, and publication time.
-              </p>
-            </div>
+      <div class="content has-text-justified" style="text-align: left;">
+          <ul>
+            <li><b> MLLMs for Molecule Science and Drug Design </b>We categorize the applications of MLLMs in Molecule Science and Drug Design into three subfields and summarize representative models along three dimensions — publication time, model size, and architectural design. The resulting figure clearly illustrates the developmental trends of models across tasks, providing readers with an intuitive overview of research progress. For detailed applications, please refer to the main text.</li>
+            <li><b>MLLMs for Protein Science. </b> We categorize the applications of MLLMs in Protein Science into three subfields and summarize representative models along three dimensions — publication time, model size, and architectural design.</li>
+            <li><b>MLLMs for Genomics and Material Science. </b> Given the relatively small number of MLLMs in the Genomics and Materials Science domains, we present them together in a single table and provide a comparative summary across three dimensions — model architecture, model size, and publication time.</li>
+          </ul>
+         </div>
           </div>
         </div>
  
 
-  <div class="columns is-centered has-text-centered">
+  <div class="columns is-centered ">
     <div class="column is-four-fifths">
-      <h2 class="title is-3" style="background: linear-gradient(to right,  indigo, indigo, skyblue,indigo, indigo); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Brief Summary of Pretraining Datasets</h2>
+      <h2 class="title is-3" style="background: linear-gradient(to right,  indigo, indigo, skyblue,indigo, indigo); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Summary of Pretraining Datasets across Covered Domains</h2>
       
       <div id="viewer2" style="position: relative; display: inline-block">
         <span id="prev2" class="arrow" style="left:-60px;">&#10094;</span> <!-- 左箭头 -->
@@ -309,13 +300,18 @@
         // 初始化
         showImage2(0);
       </script>
+      <div class="conetent has-text-justified" style="text-align: left;">
+      <p>
+        In the three tables above, we summarize commonly used pre-training and instruction-tuning datasets in the molecular, protein, and gene domains, including their modality types, data sources, and applicable tasks.
+      </p>
+    </div>
   </div>
 </div>
 
 
 <div class="columns is-centered has-text-centered">
   <div class="column is-four-fifths">
-    <h2 class="title is-3" style="background: linear-gradient(to right,  indigo, indigo, skyblue,indigo, indigo); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Brief Summary of Downstream Tasks Datasets</h2>
+    <h2 class="title is-3" style="background: linear-gradient(to right,  indigo, indigo, skyblue,indigo, indigo); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Summary of Downstream Tasks Datasets across Covered Domains</h2>
     
     <div id="viewer3" style="position: relative; display: inline-block">
       <span id="prev3" class="arrow" style="left:-60px;">&#10094;</span> <!-- 左箭头 -->
@@ -344,6 +340,11 @@
       // 初始化
       showImage3(0);
     </script>
+    <div class="conetent has-text-justified" style="text-align: left;">
+    <p>
+      Similarly, we summarize commonly used downstream task datasets in the molecular, protein, and gene domains, detailing their modalities, data sources, and corresponding links, as well as the specific applicable tasks for convenient reference by readers.
+    </p>
+  </div>
 </div>
 </div>
 </section>
@@ -361,19 +362,22 @@
 
         <div class="content has-text-justified" style="text-align: left;">
           <p>
-            <b>Hot topics of MLLMs Applications.</b>
-            MLLMs are bridging cross-disciplinary fields. We report averaged balanced accuracy (bAcc., %) and F1-score (%) with the standard errors over 5 repetitions on three representative GNN architectures (GCN, GAT, and GraphSAGE).
-          </p>
+            <b>Hot topics of MLLMs Applications and emerging hot topics.</b>
+            <ul>
+            <li>MLLMs are increasingly bridging cross-disciplinary fields. As an example, we elaborate on biomedicine in Section 7, a domain that encompasses a vast range of disciplines and naturally involves diverse data modalities. 
+            Among these, the analyses of molecules, proteins, genes, and cells play a central role, and MLLMs have begun to attract growing attention in this area.</li>
 
-          <p>
-            <b>Emerging Hot Topics.</b>
-            We highlight two directions that have recently gained considerable momentum. The first is diffusion large language models (dLLMs), which replace the conventional autoregressive decoding strategy with an iterative mask–denoise process and have shown promising advances in reasoning, controllability, and efficiency. The second is diffusion multimodal large language models (dMLLMs), which extend this paradigm to vision, audio, and other modalities, enabling more flexible cross-modal reasoning and structured generation.
+            <li>Furthermore, we highlight the rise of diffusion large language models (dLLMs), which replace the conventional autoregressive decoding strategy with an iterative mask–denoise process, as well as diffusion multimodal large language models (dMLLMs), which extend this paradigm to vision, audio, and other modalities. These developments enable more flexible cross-modal reasoning and structured generation.
+            Together, these emerging directions illustrate how diffusion-based approaches are shaping the future landscape of language and multimodal modeling.</li>
+            </ul>
           </p>
-
           <p>
             <b>Future Directions.</b>
-            We identify future directions that can be broadly categorized into domain-specific challenges and cross-disciplinary opportunities, with the goal of guiding research toward impactful advances.
+            <ul>
+            <li>With introducing emerging hot topics of MLLMs Applications and possible applications in science fields, We identify future directions that can be broadly categorized into domain-specific challenges and cross-disciplinary opportunities, with the goal of guiding research toward impactful advances. For detailed discussions, please refer to Section 8 of the paper.</li>
+            </ul>
           </p>
+          <p>         
         </div>
       </div>
     </div>
