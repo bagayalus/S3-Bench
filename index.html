@@ -165,7 +165,7 @@
             <div class="publication-links">
               <!-- PDF Link. -->
               <span class="link-block">
-                <a href=https://openreview.net/pdf?id=HSz1Kr5BeC"
+                <a href=https://openreview.net/pdf?id=HSz1Kr5BeC
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fas fa-file-pdf"></i>
@@ -205,8 +205,15 @@
           <p>
             Recent advances in artificial intelligence (AI), especially large language models, have accelerated the integration of multimodal data in scientific research. 
             Given that scientific fields involve diverse data types, ranging from text and images to complex biological sequences, graphs, and structures, multimodal large language models (MLLMs) have emerged as powerful tools to bridge these modalities, enabling more comprehensive data analysis and intelligent decision-making.
-            This work, \(\text{S}^3-\text{Bench}\), provides a comprehensive overview of recent advances in MLLMs, focusing on their diverse applications across science. We systematically review the progress of MLLMs in key scientific domains, including drug discovery, molecular & protein design, materials science, and genomics.
-            The work highlights model architectures, domain-specific adaptations, benchmark datasets, and promising future directions.More importantly, we benchmarked open-source MLLMs on a range of critical molecular and protein property prediction tasks. Our work aims to serve as a valuable resource for both researchers and practitioners interested in the rapidly evolving landscape of multimodal AI for science.
+            This work, \(\text{S}^3-\text{Bench}\), provides a comprehensive overview of recent advances in MLLMs,
+            focusing on their diverse applications across science. We systematically review the
+            progress of MLLMs in key scientific domains, including drug discovery, molecular
+            & protein design, materials science, and genomics. The work highlights model
+            architectures, domain-specific adaptations, benchmark datasets, and promising
+            future directions. More importantly, we benchmarked open-source MLLMs on a
+            range of critical molecular and protein property prediction tasks. Our work aims to
+            serve as a valuable resource for both researchers and practitioners interested in the
+            rapidly evolving landscape of multimodal AI for science.           
           </p>
         </div>
       </div>
@@ -242,6 +249,12 @@
     <div class="column is-four-fifths">
       <h2 class="title is-3" style="background: linear-gradient(to right,  indigo, indigo, skyblue,indigo, indigo); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Summary of Models across Covered Domains</h2>
       
+      <div class="content has-text-justified" style="text-align: left;">
+        <p>
+        The following three figures show MLLMs in <b>Science and Drug Design, Protein Science, Genomics and Material Science</b>. We make categorization of applications accordingly and summarize representative models along three dimensions — publication time, model size, and architectural design.
+        </p>
+      </div>
+
       <div id="viewer1" style="position: relative; display: inline-block;">
         <span id="prev1" class="arrow" style="left:-60px;">&#10094;</span> <!-- 左箭头 -->
         <img id="display1" src="./static/images/00.png" alt="Image">
@@ -285,13 +298,7 @@
         showImage1(0);
       </script>
 
-      <div class="content has-text-justified" style="text-align: left;">
-          <ul>
-            <li><b> MLLMs for Molecule Science and Drug Design </b>We categorize the applications of MLLMs in Molecule Science and Drug Design into three subfields and summarize representative models along three dimensions — publication time, model size, and architectural design. The resulting figure clearly illustrates the developmental trends of models across tasks, providing readers with an intuitive overview of research progress. For detailed applications, please refer to the main text.</li>
-            <li><b>MLLMs for Protein Science. </b> We categorize the applications of MLLMs in Protein Science into three subfields and summarize representative models along three dimensions — publication time, model size, and architectural design.</li>
-            <li><b>MLLMs for Genomics and Material Science. </b> Given the relatively small number of MLLMs in the Genomics and Materials Science domains, we present them together in a single table and provide a comparative summary across three dimensions — model architecture, model size, and publication time.</li>
-          </ul>
-         </div>
+
           </div>
         </div>
  
@@ -299,7 +306,11 @@
   <div class="columns is-centered ">
     <div class="column is-four-fifths">
       <h2 class="title is-3" style="background: linear-gradient(to right,  indigo, indigo, skyblue,indigo, indigo); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Summary of Pretraining Datasets across Covered Domains</h2>
-      
+      <div class="conetent has-text-justified" style="text-align: left;">
+        <p>
+          We summarize commonly used pre-training and instruction-tuning datasets in the molecular, protein, and gene domains, including their modality types, data sources, and applicable tasks.
+        </p>
+      </div>
       <div id="viewer2" style="position: relative; display: inline-block">
         <span id="prev2" class="arrow" style="left:-60px;">&#10094;</span> <!-- 左箭头 -->
         <img id="display2" src="./static/images/10.png" alt="Image">
@@ -336,19 +347,20 @@
         // 初始化
         showImage2(0);
       </script>
-      <div class="conetent has-text-justified" style="text-align: left;">
-      <p>
-        In the three tables above, we summarize commonly used pre-training and instruction-tuning datasets in the molecular, protein, and gene domains, including their modality types, data sources, and applicable tasks.
-      </p>
-    </div>
+      
   </div>
 </div>
+
 
 
 <div class="columns is-centered has-text-centered">
   <div class="column is-four-fifths">
     <h2 class="title is-3" style="background: linear-gradient(to right,  indigo, indigo, skyblue,indigo, indigo); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Summary of Downstream Tasks Datasets across Covered Domains</h2>
-    
+    <div class="conetent has-text-justified" style="text-align: left;">
+      <p>
+      We summarize commonly used downstream task datasets in the molecule, protein, and gene domains, detailing their modalities, data sources, and corresponding links, as well as the specific applicable tasks.
+      </p>
+    </div>
     <div id="viewer3" style="position: relative; display: inline-block">
       <span id="prev3" class="arrow" style="left:-60px;">&#10094;</span> <!-- 左箭头 -->
       <img id="display3" src="./static/images/10.png" alt="Image">
@@ -376,11 +388,7 @@
       // 初始化
       showImage3(0);
     </script>
-    <div class="conetent has-text-justified" style="text-align: left;">
-    <p>
-      Similarly, we summarize commonly used downstream task datasets in the molecular, protein, and gene domains, detailing their modalities, data sources, and corresponding links, as well as the specific applicable tasks for convenient reference by readers.
-    </p>
-  </div>
+
 </div>
 </div>
 </section>
@@ -400,18 +408,20 @@
           <p>
             <b>Hot topics of MLLMs Applications and emerging hot topics.</b>
             <ul>
-            <li>MLLMs are increasingly bridging cross-disciplinary fields. As an example, we elaborate on biomedicine in Section 7, a domain that encompasses a vast range of disciplines and naturally involves diverse data modalities. 
-            Among these, the analyses of molecules, proteins, genes, and cells play a central role, and MLLMs have begun to attract growing attention in this area.</li>
+            <li>MLLMs are increasingly bridging cross-disciplinary fields and have begun to attract growing attention in biomedicine, a domain where the analyses of molecules, proteins, genes, and cells play a central role.</li>
 
             <li>Furthermore, we highlight the rise of diffusion large language models (dLLMs), which replace the conventional autoregressive decoding strategy with an iterative mask–denoise process, as well as diffusion multimodal large language models (dMLLMs), which extend this paradigm to vision, audio, and other modalities. These developments enable more flexible cross-modal reasoning and structured generation.
             Together, these emerging directions illustrate how diffusion-based approaches are shaping the future landscape of language and multimodal modeling.</li>
             </ul>
           </p>
+          <!-- MLLMs are increasingly bridging cross-disciplinary fields. As an example, we elaborate on biomedicine in Section 7, a domain that encompasses a vast range of disciplines and naturally involves diverse data modalities. Among these, the analyses of molecules, proteins, genes, and cells play a central role, and MLLMs have begun to attract growing attention in this area.
+Furthermore, we highlight the rise of diffusion large language models (dLLMs), which replace the conventional autoregressive decoding strategy with an iterative mask–denoise process, as well as diffusion multimodal large language models (dMLLMs), which extend this paradigm to vision, audio, and other modalities. These developments enable more flexible cross-modal reasoning and structured generation. Together, these emerging directions illustrate how diffusion-based approaches are shaping the future landscape of language and multimodal modeling. -->
           <p>
             <b>Future Directions.</b>
-            <ul>
-            <li>With introducing emerging hot topics of MLLMs Applications and possible applications in science fields, We identify future directions that can be broadly categorized into domain-specific challenges and cross-disciplinary opportunities, with the goal of guiding research toward impactful advances. For detailed discussions, please refer to Section 8 of the paper.</li>
-            </ul>
+
+            <p>
+              With introducing emerging hot topics of MLLMs Applications and possible applications in science fields, We identify future directions that can be broadly categorized into domain-specific challenges and cross-disciplinary opportunities.</li>
+            </p>
           </p>
           <p>         
         </div>
