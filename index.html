@@ -115,42 +115,57 @@
         <div class="column has-text-centered">
           <h1 class="title is-1 publication-title">            
             A Comprehensive Survey of Multimodal LLMs for Scientific Discovery</h1>
-          <h4 class="title publication-title" style="font-size: 1.5rem;">ICLR 2026</h4>
+          <h4 class="title publication-title" style="font-size: 1.5rem;">NeurIPS 2025  VLM4RWD Workshop</h4>
           <div class="is-size-5 publication-authors">
             <span class="author-block">
-              <a href="https://divinyan.com/">Liang Yan</a><sup>1,3</sup>,&nbsp;</span>
+              <a href="https://divinyan.com/">Liang Yan</a><sup>1,2*</sup>,&nbsp;</span>
+              <a >Xu Jiang</a><sup>1,3*</sup>,&nbsp;</span>
+              <a >Jian Ma</a><sup>4*</sup>,&nbsp;</span>
+              <a >Yuhang Liu</a><sup>1</sup>,&nbsp;</span>
+              <a >Tian Bian</a><sup>5</sup>,&nbsp;</span>
+              <a >Qichao Wang</a><sup>6</sup>,&nbsp;</span>
+              <a >Abhishek Basu</a><sup>1</sup>,&nbsp;</span>
+              <a >Yu Rong</a><sup>5</sup>,&nbsp;</span>
+              <a >Tingyang Xu</a><sup>5</sup>,&nbsp;</span>
+              <a >Pengcheng Wu</a><sup>6</sup>,&nbsp;</span>
             
+            <br>
             
             <span class="author-block">
-              <a href="https://ytongxie.github.io/">Yutong Xie</a><sup>3†</sup>,&nbsp;</span>
+              <a >Le Song</a><sup>1</sup>,&nbsp;</span>
+              <a >Imran Razzak</a><sup>1</sup>,&nbsp;</span>
+              <a >Junchi Yan</a><sup>4†</sup>,&nbsp;</span>
+              <a >Zengfeng Huang</a><sup>2†</sup>,&nbsp;</span>
+              <a href="https://ytongxie.github.io/">Yutong Xie</a><sup>1†</sup>,&nbsp;</span>
             </span>
             
           </div>
  
           <div class="is-size-5 publication-authors">
-            <span class="author-block"><sup>1</sup>Fudan University&nbsp; &nbsp;</span>
-            <span class="author-block"><sup>2</sup>Shanghai Innovation Institute&nbsp; &nbsp;</span>
-            <span class="author-block"><sup>3</sup>MBZUAI&nbsp; &nbsp;</span>
+            <span class="author-block"><sup>1</sup>MBZUAI&nbsp; &nbsp;</span>
+            <span class="author-block"><sup>2</sup>Fudan University&nbsp; &nbsp;</span>
+            <span class="author-block"><sup>3</sup>Tsinghua University; &nbsp;</span>
+            <span class="author-block"><sup>4</sup>Shanghai Jiao Tong University; &nbsp;</span>
+            <span class="author-block"><sup>5</sup>Alibaba DAMO Academy; &nbsp;</span>
+            <span class="author-block"><sup>6</sup>Nanyang Technological University; &nbsp;</span>
+           
           </div>
  
-          <div class="is-size-5 publication-authors">
-            <span class="author-block"><sup>4</sup>Hong Kong University of Science and Technology (Guangzhou)&nbsp; &nbsp;</span>
-            <span class="author-block"><sup>5</sup>Logs AI&nbsp; &nbsp;</span>
-          </div>
- 
+
           <p>
+            <sup>*</sup> equal contribution &nbsp;
             <sup>†</sup> corresponding authors &nbsp;
           </p>
  
           <p>
             <sup></sup> Contact: yanliangfdu@gmail.com &nbsp;
           </p>
- 
+
           <div class="column has-text-centered">
             <div class="publication-links">
               <!-- PDF Link. -->
               <span class="link-block">
-                <a href="https://openreview.net/pdf?id=u72E1za8dU"
+                <a href=https://openreview.net/pdf?id=HSz1Kr5BeC"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fas fa-file-pdf"></i>
@@ -158,7 +173,6 @@
                   <span>Paper</span>
                 </a>
               </span>
-              <!-- TODO: need modify arXiv link -->
               <span class="link-block">
                 <a href="https://arxiv.org/abs/2303.10371"
                    class="external-link button is-normal is-rounded is-dark">
@@ -234,13 +248,25 @@
         <span id="next1" class="arrow" style="right:-60px;">&#10095;</span> <!-- 右箭头 -->
       </div>
     
-    
+      <p id="caption1"
+      style="margin-top: 12px;
+             font-size: 2rem;
+             color: #000000;
+             font-style: italic;">
+      </p>
       <script>
         const basePath = "./static/images";
         const numFrames1 = 3; // 图片数量
         let current1 = 0;
+        const captions1=[
+          "MLLMs for Science and Drug Design",
+          "MLLMs for Protein Science",
+          "MLLMs for Genomics and Material Science"
+        ];
     
         const display1 = document.getElementById("display1");
+        const caption1 = document.getElementById("caption1");
+
     
         // 切换图片函数
         function showImage1(index) {
@@ -249,6 +275,7 @@
           current1 = index;
           const filename = String(index).padStart(2, '0') + '.png';
           display1.src = `${basePath}/${filename}`;
+          caption1.textContent = captions1[index];
         }
     
         document.getElementById("prev1").onclick = () => showImage1(current1 - 1);
@@ -278,12 +305,21 @@
         <img id="display2" src="./static/images/10.png" alt="Image">
         <span id="next2" class="arrow" style="right:-60px;">&#10095;</span> <!-- 右箭头 -->
       </div>
+      <p id="caption2"
+      style="margin-top: 12px;
+             font-size: 2rem;
+             color: #000000;
+             font-style: italic;">
+      </p>
 
       <script>
         const numpre = 3; // 图片数量
         let curr = 0;
     
         const display2 = document.getElementById("display2");
+        const captions2=[
+          ""
+        ]
   
         // 切换图片函数
         function showImage2(index) {
@@ -388,14 +424,13 @@
 <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
     <h2 class="title">BibTeX</h2>
-    <pre><code>@inproceedings{
-      anonymous2025sbench,
-      title={\$S{\textasciicircum}3\$-Bench: A Comprehensive Study of Multimodal {LLM}s for Scientific Discovery with Benchmarking},
-      author={Anonymous},
-      booktitle={Submitted to The Fourteenth International Conference on Learning Representations},
+    <pre style="text-align: left;"><code>@inproceedings{
+      yan2025a,
+      title={A Comprehensive Survey of Multimodal {LLM}s for Scientific Discovery},
+      author={Liang Yan and Xu Jiang and Jian Ma and Yuhang Liu and Tian Bian and Qichao Wang and Abhishek Basu and Yu Rong and Tingyang Xu and Pengcheng Wu and Le Song and Imran Razzak and Junchi Yan and Zengfeng Huang and Yutong Xie},
+      booktitle={1st Workshop on VLM4RWD @ NeurIPS 2025},
       year={2025},
-      url={https://openreview.net/forum?id=u72E1za8dU},
-      note={under review}
+      url={https://openreview.net/forum?id=HSz1Kr5BeC}
       }
 </code></pre>
   </div>
